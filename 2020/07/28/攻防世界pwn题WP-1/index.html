@@ -5,7 +5,7 @@
 });
 </script><link rel="shortcut icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script id="yun-config">
     const Yun = window.Yun || {};
-    window.CONFIG = {"root":"/","title":"M4X","version":"0.9.4","anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
+    window.CONFIG = {"root":"/","title":"最后的欺诈师MAX","version":"0.9.4","anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
   </script><meta name="description" content="题目：string（格式化字符串漏洞+shellcode）跟着程序的流程分析下来，输入一串选择后来到关键点：需要使*a1 &#x3D;&#x3D; a1[1]成立才能执行shellcode，也就是((void (__fastcall *)(_QWORD, void *))v1)(0LL, v1); 这一串调用实现条件成立就是依靠前面函数里的scanf格式化字符串漏洞实现任意地址写 malloc出来v3，但是v3[0]">
 <meta property="og:type" content="article">
 <meta property="og:title" content="攻防世界pwn题WP(1)">
