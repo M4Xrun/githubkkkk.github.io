@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>渗透第一步：信息收集学习（网站www.umex.co） | M4X</title><meta name="description" content="信息收集主要分为被动信息收集和主动信息收集  被动信息收集 浏览公司主站收集信息：       条目 信息    公司名称 UMEX Technology Company Limited（UMEX科技有限公司）   公司注册地 塞舌尔群岛   客服邮箱 support@umex.zendesk.com   微信客服① BTC13120   微信客服② mncl6625   微信客服③ Axiaom"><meta name="keywords" content="渗透 信息收集"><meta name="author" content="M4X"><meta name="copyright" content="M4X"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://yoursite.com/2020/07/27/umex_info/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="渗透第一步：信息收集学习（网站www.umex.co）"><meta property="og:url" content="http://yoursite.com/2020/07/27/umex_info/"><meta property="og:site_name" content="M4X"><meta property="og:description" content="信息收集主要分为被动信息收集和主动信息收集  被动信息收集 浏览公司主站收集信息：       条目 信息    公司名称 UMEX Technology Company Limited（UMEX科技有限公司）   公司注册地 塞舌尔群岛   客服邮箱 support@umex.zendesk.com   微信客服① BTC13120   微信客服② mncl6625   微信客服③ Axiaom"><meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><meta property="article:published_time" content="2020-07-26T16:00:00.000Z"><meta property="article:modified_time" content="2020-07-27T17:28:36.650Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2020-07-28 01:28:36'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">2</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#被动信息收集"><span class="toc-number">1.</span> <span class="toc-text">被动信息收集</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#主动信息收集"><span class="toc-number">2.</span> <span class="toc-text">主动信息收集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#收个锤子"><span class="toc-number">2.1.</span> <span class="toc-text">收个锤子</span></a></li></ol></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">M4X</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">渗透第一步：信息收集学习（网站www.umex.co）</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2020-07-26T16:00:00.000Z" title="Created 2020-07-27 00:00:00">2020-07-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2020-07-27T17:28:36.650Z" title="Updated 2020-07-28 01:28:36">2020-07-28</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>信息收集主要分为<strong><u>被动信息收集</u></strong>和<strong><u>主动信息收集</u></strong></p>
+<hr>
+<h1 id="被动信息收集"><a href="#被动信息收集" class="headerlink" title="被动信息收集"></a>被动信息收集</h1><blockquote>
+<p><strong>浏览公司主站收集信息：</strong></p>
+</blockquote>
+<blockquote>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>条目</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>公司名称</td>
+<td>UMEX Technology Company Limited（UMEX科技有限公司）</td>
+</tr>
+<tr>
+<td>公司注册地</td>
+<td>塞舌尔群岛</td>
+</tr>
+<tr>
+<td>客服邮箱</td>
+<td><a href="mailto:support@umex.zendesk.com">support@umex.zendesk.com</a></td>
+</tr>
+<tr>
+<td>微信客服①</td>
+<td>BTC13120</td>
+</tr>
+<tr>
+<td>微信客服②</td>
+<td>mncl6625</td>
+</tr>
+<tr>
+<td>微信客服③</td>
+<td>AxiaomiaoC</td>
+</tr>
+<tr>
+<td>Q Q客服①</td>
+<td>595248930</td>
+</tr>
+<tr>
+<td>Q Q客服②</td>
+<td>835430720</td>
+</tr>
+<tr>
+<td>Q Q客服③</td>
+<td>1912087981</td>
+</tr>
+<tr>
+<td>官网</td>
+<td><a href="https://www.umex.co" target="_blank" rel="noopener">https://www.umex.co</a></td>
+</tr>
+<tr>
+<td>微博</td>
+<td><a href="https://weibo.com/UmexGlobal" target="_blank" rel="noopener">https://weibo.com/UmexGlobal</a></td>
+</tr>
+<tr>
+<td>Telegram中文群</td>
+<td><a href="https://t.me/Umex_cn" target="_blank" rel="noopener">https://t.me/Umex_cn</a></td>
+</tr>
+<tr>
+<td>Facebook</td>
+<td><a href="https://www.facebook.com/UmExGlobal" target="_blank" rel="noopener">https://www.facebook.com/UmExGlobal</a></td>
+</tr>
+<tr>
+<td>Twitter</td>
+<td><a href="https://twitter.com/UmexGlobal" target="_blank" rel="noopener">https://twitter.com/UmexGlobal</a></td>
+</tr>
+<tr>
+<td>Instagram</td>
+<td><a href="https://www.instagram.com/umexglobal" target="_blank" rel="noopener">https://www.instagram.com/umexglobal</a></td>
+</tr>
+<tr>
+<td>Medium</td>
+<td><a href="https://medium.com/@umexjames" target="_blank" rel="noopener">https://medium.com/@umexjames</a></td>
+</tr>
+<tr>
+<td>Reddit</td>
+<td><a href="https://www.reddit.com/user/umex2018" target="_blank" rel="noopener">https://www.reddit.com/user/umex2018</a></td>
+</tr>
+</tbody></table>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>公司业务：</strong></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<ul>
+<li>属于金融服务领域  </li>
+</ul>
+</blockquote>
+</blockquote>
+<ul>
+<li>数字货币衍生品交易服务  </li>
+<li>合约交易服务  </li>
+<li>已经上线交易产品:BTC/USDT、ETH/USDT、EOS/USDT、LTC/USDT、BCH/USDT、XRP/USDT永续合约  </li>
+<li>所提供的服务目前不受澳大利亚、加拿大、中国、德国、法国、英国、意大利、韩国、台湾、澳门、瑞士和日本的管制  </li>
+<li>网页端主站的“开始交易”按钮点击进入网页版安卓客户端，可作为入口之一</li>
+</ul>
+<blockquote>
+<blockquote>
+<p><strong>团队成员来自亚马逊，优步，埃森哲，SAP，腾讯，网易，阿里巴巴和其他顶级科技公司<br>研发团队核心成员来自中金所、上期所、蚂蚁金服、恒生、大智慧、平安科技、IBM等</strong></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>ping + bp：</strong></p>
+<blockquote>
+<p>主站IP：152.32.133.168<br>服务器：nginx_1.16.1</p>
+</blockquote>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>站长工具：</strong></p>
+<blockquote>
+<p>主机服务记录(A)  </p>
+<blockquote>
+<p>152.32.133.168（香港）</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>域名信息  </p>
+<blockquote>
+<p>注册商： GoDaddy.com, Inc<br>公司Domains By Proxy, LLC<br>域名服务器whois.godaddy.com<br>DNSns-991.awsdns-59.net<br>ns-1799.awsdns-32.co.uk<br>ns-84.awsdns-10.com<br>ns-1277.awsdns-31.org  </p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>IP信息:  </p>
+<blockquote>
+<p>IP所属机构：UCloud (HK) Holdings Group Limited<br>经纬度：114.184921,22.350617  </p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>已注册相关域名：  </p>
+<blockquote>
+<p>umex.com<br>umex.net<br>umex.org<br>umex.cc   </p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>dig工具：</strong></p>
+<blockquote>
+<p>umex.co.                637     IN      A       152.32.216.147<br>umex.co.                404     IN      NS      ns-84.awsdns-10.com.<br>umex.co.                404     IN      NS      ns-1277.awsdns-31.org.<br>umex.co.                404     IN      NS      ns-1799.awsdns-32.co.uk.<br>umex.co.                404     IN      NS      ns-991.awsdns-59.net.  </p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>子域名爆破工具subDomainsBrute：</strong></p>
+<blockquote>
+<p><a href="http://www.umex.co" target="_blank" rel="noopener">www.umex.co</a>                     152.32.133.168<br>w1.umex.co                      118.193.34.197<br>beta.umex.co                    152.32.172.122<br>w2.umex.co                      103.218.240.153  </p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>网站查询（<a href="https://www.webscan.cc/）：" target="_blank" rel="noopener">https://www.webscan.cc/）：</a></strong></p>
+<blockquote>
+<p>站点容器：openresty</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>同服IP站点列表(200)：</p>
+<blockquote>
+<p>goasean.com<br><a href="http://www.valuepool.com" target="_blank" rel="noopener">www.valuepool.com</a><br><a href="http://www.webhostingtop6.com" target="_blank" rel="noopener">www.webhostingtop6.com</a><br><a href="http://www.worldchinesejournalists.org" target="_blank" rel="noopener">www.worldchinesejournalists.org</a><br><a href="http://www.oiiohaat.com" target="_blank" rel="noopener">www.oiiohaat.com</a><br><a href="http://www.rocketdownload.com" target="_blank" rel="noopener">www.rocketdownload.com</a><br><a href="http://www.adella.photography" target="_blank" rel="noopener">www.adella.photography</a><br><a href="http://www.f-spot.org" target="_blank" rel="noopener">www.f-spot.org</a><br>d8333.app<br>margarealtor.com<br><a href="http://www.ahjdedu.com" target="_blank" rel="noopener">www.ahjdedu.com</a><br><a href="http://www.fxhb.com" target="_blank" rel="noopener">www.fxhb.com</a><br>villageofwilliamsville.com<br><a href="http://www.btsz33.com" target="_blank" rel="noopener">www.btsz33.com</a><br><a href="http://www.rama.org.in" target="_blank" rel="noopener">www.rama.org.in</a><br><a href="http://www.basfcoatings.com" target="_blank" rel="noopener">www.basfcoatings.com</a><br><a href="http://www.qyoon.com" target="_blank" rel="noopener">www.qyoon.com</a><br>marsmining.io<br><a href="http://www.aijiatxt.com" target="_blank" rel="noopener">www.aijiatxt.com</a><br><a href="http://www.jeepindia.com" target="_blank" rel="noopener">www.jeepindia.com</a><br><a href="http://www.bharatkojaniye.in" target="_blank" rel="noopener">www.bharatkojaniye.in</a><br><a href="http://www.japanrailpassreservation.net" target="_blank" rel="noopener">www.japanrailpassreservation.net</a><br><a href="http://www.jjj.com.co" target="_blank" rel="noopener">www.jjj.com.co</a><br><a href="http://www.tesejiaoyu.com" target="_blank" rel="noopener">www.tesejiaoyu.com</a><br><a href="http://www.zgzq.com" target="_blank" rel="noopener">www.zgzq.com</a><br>……</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr>
+<h1 id="主动信息收集"><a href="#主动信息收集" class="headerlink" title="主动信息收集"></a>主动信息收集</h1><blockquote>
+<p><strong>AppScan扫描器：</strong></p>
+<blockquote>
+<p>随便扫了一下，扫出个 <a href="https://www.umex.co/www/" target="_blank" rel="noopener">https://www.umex.co/www/</a></p>
+</blockquote>
+</blockquote>
+<h2 id="收个锤子"><a href="#收个锤子" class="headerlink" title="收个锤子"></a>收个锤子</h2></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">M4X</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://yoursite.com/2020/07/27/umex_info/">http://yoursite.com/2020/07/27/umex_info/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%B8%97%E9%80%8F-%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">渗透 信息收集</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2020/07/28/shellcode%E7%BC%96%E5%86%99/"><img class="prev-cover" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">shellcode编写</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By M4X</div><div class="framework-info"><span>Framework </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="Increase Font Size"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="Decrease Font Size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
